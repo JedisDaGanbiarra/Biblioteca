@@ -61,7 +61,7 @@ public class GerenciarUsuarios extends javax.swing.JInternalFrame {
         tbGerenciarUsuarios = new javax.swing.JTable();
 
         setClosable(true);
-        setTitle("Gerenciar Usuários - Sistema Biblioteca ROS");
+        setTitle("Gerenciar Usuários - Sistema Biblioteca");
 
         tbGerenciarUsuarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

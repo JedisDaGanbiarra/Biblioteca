@@ -34,7 +34,7 @@ public class CadastrarCategoria extends javax.swing.JFrame {
         btnCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Cadastrar Categoria - Sistema Biblioteca ROS");
+        setTitle("Cadastrar Categoria - Sistema Biblioteca");
 
         jLabel2.setText("Nova Categoria:");
 

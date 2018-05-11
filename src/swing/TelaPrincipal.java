@@ -56,7 +56,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menuSair = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sistema Biblioteca ROS");
+        setTitle("Sistema Biblioteca");
 
         desktopPanePrincipal.setBackground(new java.awt.Color(204, 204, 204));
         desktopPanePrincipal.setForeground(new java.awt.Color(204, 204, 204));

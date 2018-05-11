@@ -59,7 +59,7 @@ public class NovoEmprestimo extends javax.swing.JInternalFrame {
         txtCancelar = new javax.swing.JButton();
 
         setClosable(true);
-        setTitle("Novo Empréstimo - Sistema Biblioteca ROS");
+        setTitle("Novo Empréstimo - Sistema Biblioteca");
 
         jPanelPesquisa.setBorder(javax.swing.BorderFactory.createTitledBorder("Dados de Pesquisa"));
 

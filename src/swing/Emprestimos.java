@@ -55,7 +55,7 @@ public class Emprestimos extends javax.swing.JInternalFrame {
         tbEmprestimos = new javax.swing.JTable();
 
         setClosable(true);
-        setTitle("Empréstimos - Sistema Biblioteca ROS");
+        setTitle("Empréstimos - Sistema Biblioteca");
 
         tbEmprestimos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

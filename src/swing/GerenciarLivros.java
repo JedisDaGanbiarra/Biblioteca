@@ -59,7 +59,7 @@ public class GerenciarLivros extends javax.swing.JInternalFrame {
         tbGerenciarLivros = new javax.swing.JTable();
 
         setClosable(true);
-        setTitle("Gerenciar Livros - Sistema Biblioteca ROS");
+        setTitle("Gerenciar Livros - Sistema Biblioteca");
         setPreferredSize(new java.awt.Dimension(610, 513));
 
         tbGerenciarLivros.setModel(new javax.swing.table.DefaultTableModel(

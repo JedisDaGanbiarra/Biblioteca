@@ -58,7 +58,7 @@ public class Devolucao extends javax.swing.JInternalFrame {
         btnPesqEmprestimo = new javax.swing.JButton();
 
         setClosable(true);
-        setTitle("Devolução de Empréstimo - Sistema Biblioteca ROS");
+        setTitle("Devolução de Empréstimo - Sistema Biblioteca");
 
         jPanelEmprestimo.setBorder(javax.swing.BorderFactory.createTitledBorder("Dados do Empréstimo"));
         jPanelEmprestimo.setToolTipText("");

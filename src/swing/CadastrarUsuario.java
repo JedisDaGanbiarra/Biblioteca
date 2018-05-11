@@ -72,7 +72,7 @@ public class CadastrarUsuario extends javax.swing.JInternalFrame {
 
         setBorder(null);
         setClosable(true);
-        setTitle("Cadastrar Usuário - Sistema Biblioteca ROS");
+        setTitle("Cadastrar Usuário - Sistema Biblioteca");
 
         jPanelDadosCadastrais.setBorder(javax.swing.BorderFactory.createTitledBorder("Dados Cadastrais"));
 

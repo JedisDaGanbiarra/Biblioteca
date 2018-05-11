@@ -35,7 +35,7 @@ public class Login extends javax.swing.JFrame {
         txtSenha = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Login Form - Sistema Biblioteca ROS");
+        setTitle("Login Form - Sistema Biblioteca");
 
         jLabel1.setText("Usuário:");
 

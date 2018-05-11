@@ -32,7 +32,7 @@ public class Sobre extends javax.swing.JFrame {
         btnOK = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Sobre - Sistema Biblioteca ROS");
+        setTitle("Sobre - Sistema Biblioteca");
 
         lblSistema.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblSistema.setText("Sistema Biblioteca ROS - Lab. de Programação II");

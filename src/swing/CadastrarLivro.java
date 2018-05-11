@@ -97,7 +97,7 @@ public class CadastrarLivro extends javax.swing.JInternalFrame {
 
         setBorder(null);
         setClosable(true);
-        setTitle("Cadastrar Livro - Sistema Biblioteca ROS");
+        setTitle("Cadastrar Livro - Sistema Biblioteca");
         setPreferredSize(new java.awt.Dimension(630, 460));
 
         jPanelDadosCadastrais.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder("Dados Cadastrais")));
