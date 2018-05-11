@@ -1,0 +1,54 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bd;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import org.apache.log4j.Logger;
+
+/**
+ *
+ * @author Oxossi-pc
+ */
+public class ConexaoBD {
+
+    static Logger log = Logger.getLogger(ConexaoBD.class);
+
+    public static Connection getConexao() {
+        Connection conn = null;
+       // log.info("Iniciando a conexão com o banco de dados Biblioteca!");
+        try {
+            
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/biblioteca", "root", "");
+            return conn;
+        } catch (Exception e) {
+
+            log.error("Conexão com banco de dados falhou!", e);
+
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     * @param pmst - tipo PreparedStament 
+     * Metodo para retornar o id do objeto, após sua inserção no banco de dados
+    */
+    public static Long getLastKey(PreparedStatement pmst) throws Exception {
+        ResultSet rs = pmst.getGeneratedKeys();
+
+        if (rs.next()) {
+            Long id = rs.getLong(1);
+            return id;
+        }
+        return null;
+    }
+
+}
