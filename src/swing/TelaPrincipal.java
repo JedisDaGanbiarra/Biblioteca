@@ -60,12 +60,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         desktopPanePrincipal.setBackground(new java.awt.Color(204, 204, 204));
         desktopPanePrincipal.setForeground(new java.awt.Color(204, 204, 204));
+        desktopPanePrincipal.setEnabled(false);
+        desktopPanePrincipal.setFocusCycleRoot(false);
+        desktopPanePrincipal.setFocusable(false);
+        desktopPanePrincipal.setOpaque(false);
         desktopPanePrincipal.setPreferredSize(new java.awt.Dimension(760, 550));
+        desktopPanePrincipal.setRequestFocusEnabled(false);
+        desktopPanePrincipal.setVerifyInputWhenFocusTarget(false);
         getContentPane().add(desktopPanePrincipal, java.awt.BorderLayout.CENTER);
 
+        menuArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/folder.png"))); // NOI18N
         menuArquivo.setText("Arquivo");
 
         itemMenuImprimir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
+        itemMenuImprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/printer.png"))); // NOI18N
         itemMenuImprimir.setText("Imprimir");
         itemMenuImprimir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,6 +83,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menuArquivo.add(itemMenuImprimir);
 
         itemMenuSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
+        itemMenuSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/door_in.png"))); // NOI18N
         itemMenuSair.setText("Sair");
         itemMenuSair.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -93,9 +102,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuBarPrincipal.add(menuArquivo);
 
+        menuUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user_suit.png"))); // NOI18N
         menuUsuarios.setText("Gerenciar Usuários");
 
         itemMenuCadastrarUsuario.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
+        itemMenuCadastrarUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user_add.png"))); // NOI18N
         itemMenuCadastrarUsuario.setText("Cadastrar Usuário");
         itemMenuCadastrarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,6 +116,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menuUsuarios.add(itemMenuCadastrarUsuario);
 
         itemMenuGerenciarUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, 0));
+        itemMenuGerenciarUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user_suit.png"))); // NOI18N
         itemMenuGerenciarUsuarios.setText("Gerenciar Usuários");
         itemMenuGerenciarUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,6 +127,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuBarPrincipal.add(menuUsuarios);
 
+        menuLivros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/book.png"))); // NOI18N
         menuLivros.setText("Gerenciars Livros");
 
         itemMenuCadastrarLivros.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F5, 0));
@@ -190,6 +203,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuBarPrincipal.add(menuAjuda);
 
+        menuSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/door_in.png"))); // NOI18N
         menuSair.setText("Sair");
         menuSair.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

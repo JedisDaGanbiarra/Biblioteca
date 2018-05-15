@@ -35,7 +35,7 @@ public class Sobre extends javax.swing.JFrame {
         setTitle("Sobre - Sistema Biblioteca");
 
         lblSistema.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblSistema.setText("Sistema Biblioteca ROS - Lab. de Programação II");
+        lblSistema.setText("Sistema Biblioteca  - Lab. de Software");
 
         lblDev.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblDev.setText("Desenvolvedor:");
