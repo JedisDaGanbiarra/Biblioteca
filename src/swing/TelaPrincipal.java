@@ -36,6 +36,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         desktopPanePrincipal = new javax.swing.JDesktopPane();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBarPrincipal = new javax.swing.JMenuBar();
         menuArquivo = new javax.swing.JMenu();
         itemMenuImprimir = new javax.swing.JMenuItem();
@@ -67,7 +68,32 @@ public class TelaPrincipal extends javax.swing.JFrame {
         desktopPanePrincipal.setPreferredSize(new java.awt.Dimension(760, 550));
         desktopPanePrincipal.setRequestFocusEnabled(false);
         desktopPanePrincipal.setVerifyInputWhenFocusTarget(false);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Xeque-Mate-1.jpg"))); // NOI18N
+        desktopPanePrincipal.add(jLabel1);
+        jLabel1.setBounds(0, 0, 850, 700);
+
         getContentPane().add(desktopPanePrincipal, java.awt.BorderLayout.CENTER);
+
+        jMenuBarPrincipal.addHierarchyListener(new java.awt.event.HierarchyListener() {
+            public void hierarchyChanged(java.awt.event.HierarchyEvent evt) {
+                jMenuBarPrincipalHierarchyChanged(evt);
+            }
+        });
+        jMenuBarPrincipal.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jMenuBarPrincipalAncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jMenuBarPrincipal.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jMenuBarPrincipalFocusLost(evt);
+            }
+        });
 
         menuArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/folder.png"))); // NOI18N
         menuArquivo.setText("Arquivo");
@@ -328,6 +354,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     }//GEN-LAST:event_itemMenuImprimirActionPerformed
 
+    private void jMenuBarPrincipalAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jMenuBarPrincipalAncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuBarPrincipalAncestorAdded
+
+    private void jMenuBarPrincipalHierarchyChanged(java.awt.event.HierarchyEvent evt) {//GEN-FIRST:event_jMenuBarPrincipalHierarchyChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuBarPrincipalHierarchyChanged
+
+    private void jMenuBarPrincipalFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jMenuBarPrincipalFocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuBarPrincipalFocusLost
+
     public void moveToFront(JInternalFrame jif) {
         desktopPanePrincipal.moveToFront(jif);
     }
@@ -386,6 +424,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem itemMenuNovoEmprestimo;
     private javax.swing.JMenuItem itemMenuSair;
     private javax.swing.JMenuItem itemMenuSobre;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBarPrincipal;
     private javax.swing.JMenu menuAjuda;
     private javax.swing.JMenu menuArquivo;
