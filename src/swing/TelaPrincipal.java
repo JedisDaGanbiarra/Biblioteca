@@ -36,7 +36,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         desktopPanePrincipal = new javax.swing.JDesktopPane();
-        jLabel1 = new javax.swing.JLabel();
         jMenuBarPrincipal = new javax.swing.JMenuBar();
         menuArquivo = new javax.swing.JMenu();
         itemMenuImprimir = new javax.swing.JMenuItem();
@@ -68,11 +67,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         desktopPanePrincipal.setPreferredSize(new java.awt.Dimension(760, 550));
         desktopPanePrincipal.setRequestFocusEnabled(false);
         desktopPanePrincipal.setVerifyInputWhenFocusTarget(false);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Xeque-Mate-1.jpg"))); // NOI18N
-        desktopPanePrincipal.add(jLabel1);
-        jLabel1.setBounds(0, 0, 850, 700);
-
         getContentPane().add(desktopPanePrincipal, java.awt.BorderLayout.CENTER);
 
         jMenuBarPrincipal.addHierarchyListener(new java.awt.event.HierarchyListener() {
@@ -424,7 +418,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem itemMenuNovoEmprestimo;
     private javax.swing.JMenuItem itemMenuSair;
     private javax.swing.JMenuItem itemMenuSobre;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBarPrincipal;
     private javax.swing.JMenu menuAjuda;
     private javax.swing.JMenu menuArquivo;
