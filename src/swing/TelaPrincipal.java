@@ -75,12 +75,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
         jMenuBarPrincipal.addAncestorListener(new javax.swing.event.AncestorListener() {
-            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
-            }
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
                 jMenuBarPrincipalAncestorAdded(evt);
             }
             public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
             }
         });
         jMenuBarPrincipal.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -179,6 +179,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuBarPrincipal.add(menuLivros);
 
+        menuEmprestimo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arrow_up.png"))); // NOI18N
         menuEmprestimo.setText("Empréstimos");
 
         itemMenuNovoEmprestimo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F7, 0));
@@ -191,6 +192,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menuEmprestimo.add(itemMenuNovoEmprestimo);
 
         itemMenuDevolucaoEmprestimo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F9, 0));
+        itemMenuDevolucaoEmprestimo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arrow_refresh.png"))); // NOI18N
         itemMenuDevolucaoEmprestimo.setText("Devolução ");
         itemMenuDevolucaoEmprestimo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -200,6 +202,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menuEmprestimo.add(itemMenuDevolucaoEmprestimo);
 
         itemMenuEmprestimos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F10, 0));
+        itemMenuEmprestimos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arrow_up.png"))); // NOI18N
         itemMenuEmprestimos.setText("Empréstimos");
         itemMenuEmprestimos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
